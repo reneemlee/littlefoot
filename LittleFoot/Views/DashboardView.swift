@@ -1,4 +1,5 @@
 import SwiftUI
+import PhosphorSwift
 
 struct DashboardView: View {
     let profile: BabyProfile
@@ -96,8 +97,11 @@ struct DashboardView: View {
             NavigationLink {
                 PastActivitiesView(profile: profile)
             } label: {
-                Image(systemName: "calendar")
-                    .font(.system(size: 18, weight: .semibold))
+                Ph.calendarDots.regular
+                    .renderingMode(.template)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 22, height: 22)
                     .foregroundColor(Theme.primary)
                     .frame(width: 40, height: 40)
                     .background(Theme.background)

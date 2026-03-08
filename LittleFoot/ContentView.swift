@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import PhosphorSwift
 
 struct ContentView: View {
     @Query private var profiles: [BabyProfile]
@@ -30,18 +31,33 @@ struct ContentView: View {
                 }
                 .safeAreaInset(edge: .bottom) {
                     HStack(spacing: 0) {
-                        tabButton(systemIcon: "sparkles", tag: 0)
-                        tabButton(systemIcon: "heart.circle", tag: 1)
-                        tabButton(systemIcon: "gearshape", tag: 2)
+                        tabButton(icon: Ph.lightbulb.regular, tag: 0)
+                        tabButton(icon: Ph.users.regular, tag: 1)
+                        tabButton(icon: Ph.gearSix.regular, tag: 2)
                     }
-                    .padding(.horizontal, 40)
-                    .padding(.top, 14)
-                    .padding(.bottom, 10)
+                    .padding(.horizontal, 32)
+                    .padding(.vertical, 8)
                     .background(
-                        Theme.background
-                            .shadow(color: .black.opacity(0.06), radius: 8, y: -4)
-                            .ignoresSafeArea(.container, edges: .bottom)
+                        Capsule()
+                            .fill(.ultraThinMaterial)
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(
+                                        LinearGradient(
+                                            colors: [
+                                                .white.opacity(0.6),
+                                                .white.opacity(0.1),
+                                            ],
+                                            startPoint: .top,
+                                            endPoint: .bottom
+                                        ),
+                                        lineWidth: 0.5
+                                    )
+                            )
+                            .shadow(color: .black.opacity(0.08), radius: 16, y: 8)
                     )
+                    .padding(.horizontal, 48)
+                    .padding(.bottom, 4)
                 }
                 .task {
                     NotificationManager.scheduleDailyNotifications(
@@ -56,7 +72,7 @@ struct ContentView: View {
         .animation(.easeInOut, value: profiles.isEmpty)
     }
 
-    private func tabButton(systemIcon: String, tag: Int) -> some View {
+    private func tabButton(icon: Image, tag: Int) -> some View {
         Button {
             if tag == 1 {
                 UIApplication.shared.open(communityURL)
@@ -65,14 +81,16 @@ struct ContentView: View {
             }
         } label: {
             let isSelected = selectedTab == tag
-            Image(systemName: isSelected ? systemIcon : systemIcon)
-                .font(.system(size: 22, weight: isSelected ? .semibold : .regular))
+            icon
+                .renderingMode(.template)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 24, height: 24)
                 .foregroundColor(isSelected ? Theme.primary : Theme.text.opacity(0.3))
                 .frame(width: 44, height: 44)
                 .background(
                     Circle()
                         .fill(isSelected ? Theme.primary.opacity(0.12) : .clear)
-                        .frame(width: 44, height: 44)
                 )
                 .contentShape(Circle())
                 .frame(maxWidth: .infinity)
