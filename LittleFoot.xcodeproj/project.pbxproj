@@ -20,6 +20,9 @@
 		DA80F3FC26623C1296C31A3D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFA0F96C5A720A13D08ED6 /* NotificationManager.swift */; };
 		ED8BE8B52FE989E7D226D871 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */; };
 		F76DD9B4973CFF825058693A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4528738F90A18AF64A4A3884 /* Theme.swift */; };
+		AA1234560001000100010001 /* PastActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560001000100010002 /* PastActivitiesView.swift */; };
+		AA1234560001000100010003 /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560001000100010004 /* ActivityDetailView.swift */; };
+		AA1234560001000100010005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560001000100010006 /* SettingsView.swift */; };
 		FB8875D07BA0AE5BBD57CF0E /* Activities_091_180.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140335AF0E383F5E426C0AD6 /* Activities_091_180.swift */; };
 		FE32DD899C04EE27BD0BB49A /* BabyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2B9654967FB4A89CE129A /* BabyProfile.swift */; };
 /* End PBXBuildFile section */
@@ -41,14 +44,20 @@
 		ECE2B9654967FB4A89CE129A /* BabyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyProfile.swift; sourceTree = "<group>"; };
 		F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LittleFoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		AA1234560001000100010002 /* PastActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastActivitiesView.swift; sourceTree = "<group>"; };
+		AA1234560001000100010004 /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
+		AA1234560001000100010006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		015EF3D9DBAA0C66E461716A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA1234560001000100010004 /* ActivityDetailView.swift */,
 				FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */,
 				6AF570BC884320C40BCE9165 /* OnboardingView.swift */,
+				AA1234560001000100010002 /* PastActivitiesView.swift */,
+				AA1234560001000100010006 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,12 +125,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		BB0000000000000000000010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		B97A9D62B21D88E43C1868D7 /* LittleFoot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9969775861FD0311239A1C8E /* Build configuration list for PBXNativeTarget "LittleFoot" */;
 			buildPhases = (
 				F9A541F819BF55FE46CE1299 /* Sources */,
+				BB0000000000000000000010 /* Frameworks */,
 				986022E8B26B9425506792DF /* Resources */,
 			);
 			buildRules = (
@@ -130,6 +150,7 @@
 			);
 			name = LittleFoot;
 			packageProductDependencies = (
+				BB0000000000000000000002 /* PhosphorSwift */,
 			);
 			productName = LittleFoot;
 			productReference = F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */;
@@ -159,6 +180,9 @@
 			productRefGroup = C3CA9FD4DB243072B4D272C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				BB0000000000000000000001 /* XCRemoteSwiftPackageReference "swift" */,
+			);
 			targets = (
 				B97A9D62B21D88E43C1868D7 /* LittleFoot */,
 			);
@@ -195,10 +219,32 @@
 				DA80F3FC26623C1296C31A3D /* NotificationManager.swift in Sources */,
 				85C5A0B29257A35A501D5E22 /* OnboardingView.swift in Sources */,
 				F76DD9B4973CFF825058693A /* Theme.swift in Sources */,
+				AA1234560001000100010001 /* PastActivitiesView.swift in Sources */,
+				AA1234560001000100010003 /* ActivityDetailView.swift in Sources */,
+				AA1234560001000100010005 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB0000000000000000000001 /* XCRemoteSwiftPackageReference "swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phosphor-icons/swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB0000000000000000000002 /* PhosphorSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB0000000000000000000001 /* XCRemoteSwiftPackageReference "swift" */;
+			productName = PhosphorSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCBuildConfiguration section */
 		320F3280BC52E8AE1F020E4A /* Debug */ = {

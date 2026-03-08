@@ -7,83 +7,105 @@ struct DashboardView: View {
     private var activity: Activity { Activities.forDay(dayOfLife) }
 
     var body: some View {
-        ZStack {
-            Theme.background.ignoresSafeArea()
+        ScrollView {
+            VStack(spacing: 20) {
+                // Header
+                VStack(spacing: 8) {
+                    Image("Logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80, height: 80)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
 
-            ScrollView {
-                VStack(spacing: 24) {
-                    // Header
-                    VStack(spacing: 8) {
-                        Text("🦶")
-                            .font(.system(size: 40))
+                    Text(profile.name)
+                        .font(Theme.largeTitle)
+                        .foregroundColor(Theme.text)
 
-                        Text(profile.name)
-                            .font(Theme.largeTitle)
-                            .foregroundColor(Theme.text)
+                    Text(profile.ageDescription)
+                        .font(Theme.body)
+                        .foregroundColor(Theme.textLight)
 
-                        Text(profile.ageDescription)
-                            .font(Theme.body)
+                    Text("Day \(dayOfLife)")
+                        .font(Theme.headline)
+                        .foregroundColor(Theme.primary)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 6)
+                        .background(Theme.primary.opacity(0.12))
+                        .cornerRadius(20)
+                }
+                .padding(.top, 12)
+
+                // Today's Activity Card
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack {
+                        Text("Today's Activity")
+                            .font(Theme.caption)
                             .foregroundColor(Theme.textLight)
-
-                        Text("Day \(dayOfLife)")
-                            .font(Theme.headline)
-                            .foregroundColor(Theme.primary)
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 6)
-                            .background(Theme.primary.opacity(0.12))
-                            .cornerRadius(20)
+                            .textCase(.uppercase)
+                        Spacer()
                     }
-                    .padding(.top, 20)
 
-                    // Today's Activity Card
-                    VStack(alignment: .leading, spacing: 16) {
-                        HStack {
-                            Text("Today's Activity")
+                    Image(activity.doodle)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxHeight: 180)
+                        .frame(maxWidth: .infinity)
+
+                    Text(activity.name)
+                        .font(Theme.title)
+                        .foregroundColor(Theme.text)
+
+                    Text(activity.description)
+                        .font(Theme.body)
+                        .foregroundColor(Theme.text)
+                        .lineSpacing(4)
+
+                    if !activity.accessories.isEmpty {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("You'll need")
                                 .font(Theme.caption)
                                 .foregroundColor(Theme.textLight)
                                 .textCase(.uppercase)
-                            Spacer()
-                        }
 
-                        Text(activity.name)
-                            .font(Theme.title)
-                            .foregroundColor(Theme.text)
-
-                        Text(activity.description)
-                            .font(Theme.body)
-                            .foregroundColor(Theme.text)
-                            .lineSpacing(4)
-
-                        if !activity.accessories.isEmpty {
-                            VStack(alignment: .leading, spacing: 8) {
-                                Text("You'll need")
-                                    .font(Theme.caption)
-                                    .foregroundColor(Theme.textLight)
-                                    .textCase(.uppercase)
-
-                                FlowLayout(spacing: 8) {
-                                    ForEach(activity.accessories, id: \.self) { accessory in
-                                        Text(accessory)
-                                            .font(Theme.caption)
-                                            .foregroundColor(Theme.secondary)
-                                            .padding(.horizontal, 12)
-                                            .padding(.vertical, 6)
-                                            .background(Theme.secondary.opacity(0.12))
-                                            .cornerRadius(20)
-                                    }
+                            FlowLayout(spacing: 8) {
+                                ForEach(activity.accessories, id: \.self) { accessory in
+                                    Text(accessory)
+                                        .font(Theme.caption)
+                                        .foregroundColor(Theme.secondary)
+                                        .padding(.horizontal, 12)
+                                        .padding(.vertical, 6)
+                                        .background(Theme.secondary.opacity(0.12))
+                                        .cornerRadius(20)
                                 }
                             }
                         }
                     }
-                    .padding(Theme.cardPadding)
-                    .background(Color.white)
-                    .cornerRadius(Theme.cornerRadius)
-                    .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
-                    .padding(.horizontal, Theme.screenPadding)
-
-                    Spacer(minLength: 40)
                 }
+                .padding(Theme.cardPadding)
+                .background(Color.white)
+                .cornerRadius(Theme.cornerRadius)
+                .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
+                .padding(.horizontal, Theme.screenPadding)
+
+                Spacer(minLength: 40)
             }
+        }
+        .background(Theme.background)
+        .navigationBarHidden(true)
+        .overlay(alignment: .topTrailing) {
+            NavigationLink {
+                PastActivitiesView(profile: profile)
+            } label: {
+                Image(systemName: "calendar")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(Theme.primary)
+                    .frame(width: 40, height: 40)
+                    .background(Theme.background)
+                    .clipShape(Circle())
+                    .shadow(color: .black.opacity(0.08), radius: 4, y: 2)
+            }
+            .padding(.trailing, Theme.screenPadding)
+            .padding(.top, 8)
         }
     }
 }

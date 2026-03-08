@@ -20,7 +20,7 @@ enum NotificationManager {
             let activity = Activities.forDay(dayOfLife)
 
             let content = UNMutableNotificationContent()
-            content.title = "Little Foot 🦶"
+            content.title = "Little Foot"
             content.subtitle = "\(babyName) — Day \(dayOfLife)"
             content.body = "\(activity.name): \(activity.description)"
             content.sound = .default
@@ -37,5 +37,9 @@ enum NotificationManager {
             )
             center.add(request)
         }
+    }
+
+    static func cancelAll() {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
 }
