@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57CF0B609F26F08302D72B56 /* LittleFootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EEE7485DBBFC30C2496A0 /* LittleFootApp.swift */; };
+		781A8185C26409D685048D86 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF42DACE00BDFE47E8AE9BE /* Activity.swift */; };
+		85C5A0B29257A35A501D5E22 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF570BC884320C40BCE9165 /* OnboardingView.swift */; };
+		9148A7429C10E170B8D0B476 /* Activities_271_365.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87F56745B89716B5D5A7146 /* Activities_271_365.swift */; };
+		A010EC5F7362FE4BE7355A66 /* Activities_001_030.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AB5BBDD4C87E427B1CA783 /* Activities_001_030.swift */; };
+		A6C2C5C8376139FD7D660291 /* Activities_181_270.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516F5864450FB6A3D65F07E /* Activities_181_270.swift */; };
+		C23944FCF667D661D80C4192 /* Activities_031_090.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697AB682CB41C7139FBD8DA /* Activities_031_090.swift */; };
+		CF41C4F71F196DD28D2E425A /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CD6B42D5DF92E70CB2B63A /* Activities.swift */; };
+		CF6C67E1889356CBA13E2CA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA1835D8E760528D480F72 /* ContentView.swift */; };
+		D353B5DD022279037D8141E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C516C567591AA4B197E337 /* Assets.xcassets */; };
+		DA80F3FC26623C1296C31A3D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFA0F96C5A720A13D08ED6 /* NotificationManager.swift */; };
+		ED8BE8B52FE989E7D226D871 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */; };
+		F76DD9B4973CFF825058693A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4528738F90A18AF64A4A3884 /* Theme.swift */; };
+		FB8875D07BA0AE5BBD57CF0E /* Activities_091_180.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140335AF0E383F5E426C0AD6 /* Activities_091_180.swift */; };
+		FE32DD899C04EE27BD0BB49A /* BabyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2B9654967FB4A89CE129A /* BabyProfile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		140335AF0E383F5E426C0AD6 /* Activities_091_180.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_091_180.swift; sourceTree = "<group>"; };
+		195EEE7485DBBFC30C2496A0 /* LittleFootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleFootApp.swift; sourceTree = "<group>"; };
+		1DAFA0F96C5A720A13D08ED6 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		2EF42DACE00BDFE47E8AE9BE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		4528738F90A18AF64A4A3884 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		4697AB682CB41C7139FBD8DA /* Activities_031_090.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_031_090.swift; sourceTree = "<group>"; };
+		51CD6B42D5DF92E70CB2B63A /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		68AB5BBDD4C87E427B1CA783 /* Activities_001_030.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_001_030.swift; sourceTree = "<group>"; };
+		6AF570BC884320C40BCE9165 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A9C516C567591AA4B197E337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B516F5864450FB6A3D65F07E /* Activities_181_270.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_181_270.swift; sourceTree = "<group>"; };
+		C3DA1835D8E760528D480F72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E87F56745B89716B5D5A7146 /* Activities_271_365.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_271_365.swift; sourceTree = "<group>"; };
+		ECE2B9654967FB4A89CE129A /* BabyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyProfile.swift; sourceTree = "<group>"; };
+		F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LittleFoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		015EF3D9DBAA0C66E461716A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */,
+				6AF570BC884320C40BCE9165 /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		036D01169198F32F6060562C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1DAFA0F96C5A720A13D08ED6 /* NotificationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8318CB58D8C3A2687A12C145 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECE2B9654967FB4A89CE129A /* BabyProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94E9207F826D79D5633E359A = {
+			isa = PBXGroup;
+			children = (
+				C627A8120F70570B4087D2BC /* LittleFoot */,
+				C3CA9FD4DB243072B4D272C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3CA9FD4DB243072B4D272C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C627A8120F70570B4087D2BC /* LittleFoot */ = {
+			isa = PBXGroup;
+			children = (
+				A9C516C567591AA4B197E337 /* Assets.xcassets */,
+				C3DA1835D8E760528D480F72 /* ContentView.swift */,
+				195EEE7485DBBFC30C2496A0 /* LittleFootApp.swift */,
+				4528738F90A18AF64A4A3884 /* Theme.swift */,
+				E0A0616BFABB076FE151FD88 /* Data */,
+				8318CB58D8C3A2687A12C145 /* Models */,
+				036D01169198F32F6060562C /* Services */,
+				015EF3D9DBAA0C66E461716A /* Views */,
+			);
+			path = LittleFoot;
+			sourceTree = "<group>";
+		};
+		E0A0616BFABB076FE151FD88 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				68AB5BBDD4C87E427B1CA783 /* Activities_001_030.swift */,
+				4697AB682CB41C7139FBD8DA /* Activities_031_090.swift */,
+				140335AF0E383F5E426C0AD6 /* Activities_091_180.swift */,
+				B516F5864450FB6A3D65F07E /* Activities_181_270.swift */,
+				E87F56745B89716B5D5A7146 /* Activities_271_365.swift */,
+				51CD6B42D5DF92E70CB2B63A /* Activities.swift */,
+				2EF42DACE00BDFE47E8AE9BE /* Activity.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B97A9D62B21D88E43C1868D7 /* LittleFoot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9969775861FD0311239A1C8E /* Build configuration list for PBXNativeTarget "LittleFoot" */;
+			buildPhases = (
+				F9A541F819BF55FE46CE1299 /* Sources */,
+				986022E8B26B9425506792DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LittleFoot;
+			packageProductDependencies = (
+			);
+			productName = LittleFoot;
+			productReference = F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF783B1D5BD7E119760D89B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 7EC9BE9C71274B27C817B694 /* Build configuration list for PBXProject "LittleFoot" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 94E9207F826D79D5633E359A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C3CA9FD4DB243072B4D272C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B97A9D62B21D88E43C1868D7 /* LittleFoot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		986022E8B26B9425506792DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D353B5DD022279037D8141E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A541F819BF55FE46CE1299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF41C4F71F196DD28D2E425A /* Activities.swift in Sources */,
+				A010EC5F7362FE4BE7355A66 /* Activities_001_030.swift in Sources */,
+				C23944FCF667D661D80C4192 /* Activities_031_090.swift in Sources */,
+				FB8875D07BA0AE5BBD57CF0E /* Activities_091_180.swift in Sources */,
+				A6C2C5C8376139FD7D660291 /* Activities_181_270.swift in Sources */,
+				9148A7429C10E170B8D0B476 /* Activities_271_365.swift in Sources */,
+				781A8185C26409D685048D86 /* Activity.swift in Sources */,
+				FE32DD899C04EE27BD0BB49A /* BabyProfile.swift in Sources */,
+				CF6C67E1889356CBA13E2CA9 /* ContentView.swift in Sources */,
+				ED8BE8B52FE989E7D226D871 /* DashboardView.swift in Sources */,
+				57CF0B609F26F08302D72B56 /* LittleFootApp.swift in Sources */,
+				DA80F3FC26623C1296C31A3D /* NotificationManager.swift in Sources */,
+				85C5A0B29257A35A501D5E22 /* OnboardingView.swift in Sources */,
+				F76DD9B4973CFF825058693A /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		320F3280BC52E8AE1F020E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Little Foot";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefoot.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3448EDE47A3139D775205E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		E606D013BE29E9C3C90D48AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		FCF7A41B9C0478E82ECE80F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Little Foot";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefoot.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EC9BE9C71274B27C817B694 /* Build configuration list for PBXProject "LittleFoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E606D013BE29E9C3C90D48AD /* Debug */,
+				C3448EDE47A3139D775205E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9969775861FD0311239A1C8E /* Build configuration list for PBXNativeTarget "LittleFoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320F3280BC52E8AE1F020E4A /* Debug */,
+				FCF7A41B9C0478E82ECE80F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF783B1D5BD7E119760D89B5 /* Project object */;
+}
