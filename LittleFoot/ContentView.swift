@@ -29,33 +29,17 @@ struct ContentView: View {
                     }
                 }
                 .safeAreaInset(edge: .bottom) {
-                    VStack(spacing: 0) {
-                        Divider()
-                        HStack(spacing: 0) {
-                            tabButton(
-                                systemIcon: "star.fill",
-                                label: "Today",
-                                tag: 0
-                            )
-
-                            tabButton(
-                                systemIcon: "person.3.fill",
-                                label: "Community",
-                                tag: 1
-                            )
-
-                            tabButton(
-                                systemIcon: "gearshape.fill",
-                                label: "Settings",
-                                tag: 2
-                            )
-                        }
-                        .padding(.top, 10)
-                        .padding(.bottom, 8)
+                    HStack(spacing: 0) {
+                        tabButton(systemIcon: "sparkles", tag: 0)
+                        tabButton(systemIcon: "heart.circle", tag: 1)
+                        tabButton(systemIcon: "gearshape", tag: 2)
                     }
+                    .padding(.horizontal, 40)
+                    .padding(.top, 14)
+                    .padding(.bottom, 10)
                     .background(
                         Theme.background
-                            .shadow(color: .black.opacity(0.05), radius: 4, y: -2)
+                            .shadow(color: .black.opacity(0.06), radius: 8, y: -4)
                             .ignoresSafeArea(.container, edges: .bottom)
                     )
                 }
@@ -72,7 +56,7 @@ struct ContentView: View {
         .animation(.easeInOut, value: profiles.isEmpty)
     }
 
-    private func tabButton(systemIcon: String, label: String, tag: Int) -> some View {
+    private func tabButton(systemIcon: String, tag: Int) -> some View {
         Button {
             if tag == 1 {
                 UIApplication.shared.open(communityURL)
@@ -80,16 +64,18 @@ struct ContentView: View {
                 selectedTab = tag
             }
         } label: {
-            VStack(spacing: 4) {
-                Image(systemName: systemIcon)
-                    .font(.system(size: 20))
-                    .frame(width: 22, height: 22)
-
-                Text(label)
-                    .font(.system(size: 10, design: .rounded))
-            }
-            .foregroundColor(selectedTab == tag ? Theme.primary : .gray)
-            .frame(maxWidth: .infinity)
+            let isSelected = selectedTab == tag
+            Image(systemName: isSelected ? systemIcon : systemIcon)
+                .font(.system(size: 22, weight: isSelected ? .semibold : .regular))
+                .foregroundColor(isSelected ? Theme.primary : Theme.text.opacity(0.3))
+                .frame(width: 44, height: 44)
+                .background(
+                    Circle()
+                        .fill(isSelected ? Theme.primary.opacity(0.12) : .clear)
+                        .frame(width: 44, height: 44)
+                )
+                .contentShape(Circle())
+                .frame(maxWidth: .infinity)
         }
     }
 }

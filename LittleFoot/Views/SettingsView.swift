@@ -1,5 +1,4 @@
 import SwiftUI
-import PhosphorSwift
 
 struct SettingsView: View {
     let profile: BabyProfile
@@ -12,97 +11,100 @@ struct SettingsView: View {
 
     var body: some View {
         List {
-                Section {
+            Section {
+                HStack(spacing: 16) {
+                    Image(systemName: "face.smiling.inverse")
+                        .font(.system(size: 20))
+                        .foregroundColor(Theme.primary)
+                        .frame(width: 24, height: 24)
+
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(profile.name)
+                            .font(Theme.headline)
+                            .foregroundColor(Theme.text)
+
+                        Text(profile.ageDescription)
+                            .font(Theme.caption)
+                            .foregroundColor(Theme.textLight)
+                    }
+                }
+                .padding(.vertical, 4)
+            } header: {
+                Text("Baby")
+            }
+
+            Section {
+                Toggle(isOn: $notificationsEnabled) {
                     HStack(spacing: 16) {
-                        Ph.baby.fill
+                        Image(systemName: "bell.badge.fill")
+                            .font(.system(size: 20))
+                            .foregroundColor(Theme.secondary)
                             .frame(width: 24, height: 24)
-                            .color(Theme.primary)
 
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(profile.name)
-                                .font(Theme.headline)
-                                .foregroundColor(Theme.text)
-
-                            Text(profile.ageDescription)
-                                .font(Theme.caption)
-                                .foregroundColor(Theme.textLight)
-                        }
+                        Text("Daily Reminders")
+                            .font(Theme.body)
+                            .foregroundColor(Theme.text)
                     }
-                    .padding(.vertical, 4)
-                } header: {
-                    Text("Baby")
                 }
-
-                Section {
-                    Toggle(isOn: $notificationsEnabled) {
-                        HStack(spacing: 16) {
-                            Ph.bellRinging.fill
-                                .frame(width: 24, height: 24)
-                                .color(Theme.secondary)
-
-                            Text("Daily Reminders")
-                                .font(Theme.body)
-                                .foregroundColor(Theme.text)
-                        }
+                .tint(Theme.primary)
+                .onChange(of: notificationsEnabled) { _, enabled in
+                    if enabled {
+                        NotificationManager.requestPermission()
+                        NotificationManager.scheduleDailyNotifications(
+                            babyName: profile.name,
+                            birthday: profile.birthday
+                        )
+                    } else {
+                        NotificationManager.cancelAll()
                     }
-                    .tint(Theme.primary)
-                    .onChange(of: notificationsEnabled) { _, enabled in
-                        if enabled {
-                            NotificationManager.requestPermission()
-                            NotificationManager.scheduleDailyNotifications(
-                                babyName: profile.name,
-                                birthday: profile.birthday
-                            )
-                        } else {
-                            NotificationManager.cancelAll()
-                        }
-                    }
-                } header: {
-                    Text("Notifications")
                 }
+            } header: {
+                Text("Notifications")
+            }
 
-                Section {
-                    Button {
-                        sendContactEmail()
-                    } label: {
-                        HStack(spacing: 16) {
-                            Ph.envelope.fill
-                                .frame(width: 24, height: 24)
-                                .color(Theme.primary)
+            Section {
+                Button {
+                    sendContactEmail()
+                } label: {
+                    HStack(spacing: 16) {
+                        Image(systemName: "envelope.fill")
+                            .font(.system(size: 20))
+                            .foregroundColor(Theme.primary)
+                            .frame(width: 24, height: 24)
 
-                            Text("Contact Us")
-                                .font(Theme.body)
-                                .foregroundColor(Theme.text)
-
-                            Spacer()
-
-                            Ph.caretRight.bold
-                                .frame(width: 16, height: 16)
-                                .color(Theme.textLight)
-                        }
-                    }
-                } header: {
-                    Text("Support")
-                }
-
-                Section {
-                    HStack {
-                        Text("Version")
+                        Text("Contact Us")
                             .font(Theme.body)
                             .foregroundColor(Theme.text)
 
                         Spacer()
 
-                        Text(appVersion)
-                            .font(Theme.body)
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(Theme.textLight)
                     }
-                } header: {
-                    Text("About")
                 }
+            } header: {
+                Text("Support")
             }
-            .scrollContentBackground(.hidden)
-            .background(Theme.background)
+
+            Section {
+                HStack {
+                    Text("Version")
+                        .font(Theme.body)
+                        .foregroundColor(Theme.text)
+
+                    Spacer()
+
+                    Text(appVersion)
+                        .font(Theme.body)
+                        .foregroundColor(Theme.textLight)
+                }
+            } header: {
+                Text("About")
+            }
+        }
+        .scrollContentBackground(.hidden)
+        .background(Theme.background)
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
     }
