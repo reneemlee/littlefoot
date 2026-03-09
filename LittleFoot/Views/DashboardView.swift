@@ -1,11 +1,18 @@
 import SwiftUI
+import SwiftData
 import PhosphorSwift
 
 struct DashboardView: View {
     let profile: BabyProfile
+    @Query private var favorites: [FavoriteActivity]
+    @Environment(\.modelContext) private var modelContext
 
     private var dayOfLife: Int { profile.dayOfLife }
     private var activity: Activity { Activities.forDay(dayOfLife) }
+
+    private var isFavorited: Bool {
+        favorites.contains { $0.dayNumber == dayOfLife }
+    }
 
     var body: some View {
         ScrollView {
@@ -44,6 +51,16 @@ struct DashboardView: View {
                             .foregroundColor(Theme.textLight)
                             .textCase(.uppercase)
                         Spacer()
+                        Button {
+                            toggleFavorite()
+                        } label: {
+                            (isFavorited ? Ph.heart.fill : Ph.heart.regular)
+                                .renderingMode(.template)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 22, height: 22)
+                                .foregroundColor(isFavorited ? Theme.primary : Theme.textLight)
+                        }
                     }
 
                     Image(activity.doodle)
@@ -95,9 +112,9 @@ struct DashboardView: View {
         .navigationBarHidden(true)
         .overlay(alignment: .topTrailing) {
             NavigationLink {
-                PastActivitiesView(profile: profile)
+                SettingsView(profile: profile)
             } label: {
-                Ph.calendarDots.regular
+                Ph.gearSix.regular
                     .renderingMode(.template)
                     .resizable()
                     .scaledToFit()
@@ -110,6 +127,14 @@ struct DashboardView: View {
             }
             .padding(.trailing, Theme.screenPadding)
             .padding(.top, 8)
+        }
+    }
+
+    private func toggleFavorite() {
+        if let existing = favorites.first(where: { $0.dayNumber == dayOfLife }) {
+            modelContext.delete(existing)
+        } else {
+            modelContext.insert(FavoriteActivity(dayNumber: dayOfLife))
         }
     }
 }

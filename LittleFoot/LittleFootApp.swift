@@ -7,6 +7,6 @@ struct LittleFootApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: BabyProfile.self)
+        .modelContainer(for: [BabyProfile.self, FavoriteActivity.self])
     }
 }

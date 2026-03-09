@@ -26,10 +26,6 @@ struct OnboardingView: View {
                         .frame(width: 120, height: 120)
                         .clipShape(RoundedRectangle(cornerRadius: 24))
 
-                    Text("Little Foot")
-                        .font(Theme.largeTitle)
-                        .foregroundColor(Theme.text)
-
                     Text("Track your baby's first year,\none day at a time")
                         .font(Theme.body)
                         .foregroundColor(Theme.textLight)

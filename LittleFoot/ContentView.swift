@@ -19,9 +19,9 @@ struct ContentView: View {
                         NavigationStack {
                             DashboardView(profile: profile)
                         }
-                    case 2:
+                    case 1:
                         NavigationStack {
-                            SettingsView(profile: profile)
+                            FavoritesView(profile: profile)
                         }
                     default:
                         NavigationStack {
@@ -32,8 +32,8 @@ struct ContentView: View {
                 .safeAreaInset(edge: .bottom) {
                     HStack(spacing: 0) {
                         tabButton(icon: Ph.lightbulb.regular, tag: 0)
-                        tabButton(icon: Ph.users.regular, tag: 1)
-                        tabButton(icon: Ph.gearSix.regular, tag: 2)
+                        tabButton(icon: Ph.heart.regular, tag: 1)
+                        tabButton(icon: Ph.users.regular, tag: 2)
                     }
                     .padding(.horizontal, 32)
                     .padding(.vertical, 8)
@@ -74,7 +74,7 @@ struct ContentView: View {
 
     private func tabButton(icon: Image, tag: Int) -> some View {
         Button {
-            if tag == 1 {
+            if tag == 2 {
                 UIApplication.shared.open(communityURL)
             } else {
                 selectedTab = tag
