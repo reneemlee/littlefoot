@@ -6,6 +6,7 @@ xcuserdata/
 
 # Xcode build
 build/
+!.claude/skills/build/
 DerivedData/
 
 # Swift Package Manager
