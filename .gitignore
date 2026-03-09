@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Xcode user-specific
+xcuserdata/
+
+# Xcode build
+build/
+DerivedData/
+
+# Swift Package Manager
+.build/
+Packages/
+
+# MCP config (local)
+.mcp.json
+.xcodebuildmcp/
