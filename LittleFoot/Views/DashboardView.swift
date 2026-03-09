@@ -6,6 +6,7 @@ struct DashboardView: View {
     let profile: BabyProfile
     @Query private var favorites: [FavoriteActivity]
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.colorScheme) private var colorScheme
 
     private var dayOfLife: Int { profile.dayOfLife }
     private var activity: Activity { Activities.forDay(dayOfLife) }
@@ -67,6 +68,7 @@ struct DashboardView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(maxHeight: 180)
+                        .doodleStyle(colorScheme)
                         .frame(maxWidth: .infinity)
 
                     Text(activity.name)
@@ -100,7 +102,7 @@ struct DashboardView: View {
                     }
                 }
                 .padding(Theme.cardPadding)
-                .background(Color.white)
+                .background(Theme.cardBackground)
                 .cornerRadius(Theme.cornerRadius)
                 .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
                 .padding(.horizontal, Theme.screenPadding)

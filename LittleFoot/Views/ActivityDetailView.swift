@@ -4,6 +4,7 @@ struct ActivityDetailView: View {
     let activity: Activity
     let date: Date
     let dayOfLife: Int
+    @Environment(\.colorScheme) private var colorScheme
 
     private var formattedDate: String {
         date.formatted(date: .long, time: .omitted)
@@ -32,6 +33,7 @@ struct ActivityDetailView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(maxHeight: 180)
+                        .doodleStyle(colorScheme)
                         .frame(maxWidth: .infinity)
 
                     Text(activity.name)
@@ -65,7 +67,7 @@ struct ActivityDetailView: View {
                     }
                 }
                 .padding(Theme.cardPadding)
-                .background(Color.white)
+                .background(Theme.cardBackground)
                 .cornerRadius(Theme.cornerRadius)
                 .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
                 .padding(.horizontal, Theme.screenPadding)

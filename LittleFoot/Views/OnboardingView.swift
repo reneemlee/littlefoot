@@ -45,7 +45,7 @@ struct OnboardingView: View {
                             .font(Theme.body)
                             .foregroundColor(Theme.text)
                             .padding()
-                            .background(Color.white)
+                            .background(Theme.cardBackground)
                             .cornerRadius(Theme.cornerRadius)
                             .shadow(color: .black.opacity(0.04), radius: 8, y: 4)
                     }
@@ -68,7 +68,7 @@ struct OnboardingView: View {
                         .font(Theme.body)
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(Color.white)
+                        .background(Theme.cardBackground)
                         .cornerRadius(Theme.cornerRadius)
                         .shadow(color: .black.opacity(0.04), radius: 8, y: 4)
                     }

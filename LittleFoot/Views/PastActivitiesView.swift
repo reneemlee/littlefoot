@@ -57,7 +57,7 @@ struct PastActivitiesView: View {
                             .color(Theme.textLight)
                     }
                     .padding(Theme.cardPadding)
-                    .background(Color.white)
+                    .background(Theme.cardBackground)
                     .cornerRadius(Theme.cornerRadius)
                     .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
                 }

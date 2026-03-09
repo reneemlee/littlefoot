@@ -6,6 +6,7 @@ struct FavoritesView: View {
     let profile: BabyProfile
     @Query(sort: \FavoriteActivity.dateAdded, order: .reverse) private var favorites: [FavoriteActivity]
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.colorScheme) private var colorScheme
 
     @State private var selectedSegment = 0
     @State private var selectedDate: Date = Date()
@@ -97,6 +98,7 @@ struct FavoritesView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
+                .doodleStyle(colorScheme)
 
             VStack(alignment: .leading, spacing: 4) {
                 Text("Day \(dayNumber)")
@@ -124,7 +126,7 @@ struct FavoritesView: View {
             }
         }
         .padding(Theme.cardPadding)
-        .background(Color.white)
+        .background(Theme.cardBackground)
         .cornerRadius(Theme.cornerRadius)
         .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
     }
@@ -175,7 +177,7 @@ struct FavoritesView: View {
                             .foregroundColor(Theme.textLight)
                     }
                     .padding(Theme.cardPadding)
-                    .background(Color.white)
+                    .background(Theme.cardBackground)
                     .cornerRadius(Theme.cornerRadius)
                     .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
                 }
