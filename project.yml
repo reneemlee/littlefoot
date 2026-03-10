@@ -29,3 +29,12 @@ targets:
       PRODUCT_BUNDLE_IDENTIFIER: com.littlefoot.app
       GENERATE_INFOPLIST_FILE: true
       INFOPLIST_KEY_CFBundleDisplayName: "Little Foot"
+  LittleFootTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - LittleFootTests
+    dependencies:
+      - target: LittleFoot
+    settings:
+      GENERATE_INFOPLIST_FILE: true
