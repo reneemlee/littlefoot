@@ -7,59 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32C52715192825080E7D0DED /* PastActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83607181C5A82F0E89BB4F00 /* PastActivitiesView.swift */; };
 		57CF0B609F26F08302D72B56 /* LittleFootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EEE7485DBBFC30C2496A0 /* LittleFootApp.swift */; };
+		74DA2031F403FBE44F2C77EB /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10D6BDA9DECC428C39CBFE /* FavoritesView.swift */; };
 		781A8185C26409D685048D86 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF42DACE00BDFE47E8AE9BE /* Activity.swift */; };
+		787A5765D8FA477B24E66611 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7200C3D0DC42F226328EB7 /* NotificationDelegate.swift */; };
 		85C5A0B29257A35A501D5E22 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF570BC884320C40BCE9165 /* OnboardingView.swift */; };
+		86B814EDDACAF7DD3614C53D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628C18B5C68CE21EC128016A /* SettingsView.swift */; };
+		8E47A5CA449E147D96BBC12F /* FavoriteActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84290E6E7989C5B8D1083C4D /* FavoriteActivity.swift */; };
 		9148A7429C10E170B8D0B476 /* Activities_271_365.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87F56745B89716B5D5A7146 /* Activities_271_365.swift */; };
+		932D085340B11EC532275C7F /* PhosphorSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 60F15D3B4576F0ECA68B0AF7 /* PhosphorSwift */; };
+		9CD4585D3E37C216901EC4AD /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34D4AF64998D32EC5761986 /* ActivityDetailView.swift */; };
 		A010EC5F7362FE4BE7355A66 /* Activities_001_030.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AB5BBDD4C87E427B1CA783 /* Activities_001_030.swift */; };
 		A6C2C5C8376139FD7D660291 /* Activities_181_270.swift in Sources */ = {isa = PBXBuildFile; fileRef = B516F5864450FB6A3D65F07E /* Activities_181_270.swift */; };
-		AA1234560001000100010001 /* PastActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560001000100010002 /* PastActivitiesView.swift */; };
-		AA1234560001000100010003 /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560001000100010004 /* ActivityDetailView.swift */; };
-		AA1234560001000100010005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560001000100010006 /* SettingsView.swift */; };
 		C23944FCF667D661D80C4192 /* Activities_031_090.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4697AB682CB41C7139FBD8DA /* Activities_031_090.swift */; };
 		CF41C4F71F196DD28D2E425A /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CD6B42D5DF92E70CB2B63A /* Activities.swift */; };
 		CF6C67E1889356CBA13E2CA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA1835D8E760528D480F72 /* ContentView.swift */; };
-		D0D573AB2F5E1E22004FEC85 /* PhosphorSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BB0000000000000000000002 /* PhosphorSwift */; };
 		D353B5DD022279037D8141E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C516C567591AA4B197E337 /* Assets.xcassets */; };
 		DA80F3FC26623C1296C31A3D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFA0F96C5A720A13D08ED6 /* NotificationManager.swift */; };
 		ED8BE8B52FE989E7D226D871 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */; };
 		F76DD9B4973CFF825058693A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4528738F90A18AF64A4A3884 /* Theme.swift */; };
 		FB8875D07BA0AE5BBD57CF0E /* Activities_091_180.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140335AF0E383F5E426C0AD6 /* Activities_091_180.swift */; };
 		FE32DD899C04EE27BD0BB49A /* BabyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE2B9654967FB4A89CE129A /* BabyProfile.swift */; };
-		AA1234560002000100010001 /* FavoriteActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560002000100010002 /* FavoriteActivity.swift */; };
-		AA1234560002000100010003 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1234560002000100010004 /* FavoritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		140335AF0E383F5E426C0AD6 /* Activities_091_180.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_091_180.swift; sourceTree = "<group>"; };
 		195EEE7485DBBFC30C2496A0 /* LittleFootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleFootApp.swift; sourceTree = "<group>"; };
 		1DAFA0F96C5A720A13D08ED6 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		2E10D6BDA9DECC428C39CBFE /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		2EF42DACE00BDFE47E8AE9BE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		3E7200C3D0DC42F226328EB7 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 		4528738F90A18AF64A4A3884 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4697AB682CB41C7139FBD8DA /* Activities_031_090.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_031_090.swift; sourceTree = "<group>"; };
 		51CD6B42D5DF92E70CB2B63A /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		628C18B5C68CE21EC128016A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		68AB5BBDD4C87E427B1CA783 /* Activities_001_030.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_001_030.swift; sourceTree = "<group>"; };
 		6AF570BC884320C40BCE9165 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		83607181C5A82F0E89BB4F00 /* PastActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastActivitiesView.swift; sourceTree = "<group>"; };
+		84290E6E7989C5B8D1083C4D /* FavoriteActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteActivity.swift; sourceTree = "<group>"; };
 		A9C516C567591AA4B197E337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA1234560001000100010002 /* PastActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastActivitiesView.swift; sourceTree = "<group>"; };
-		AA1234560001000100010004 /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
-		AA1234560001000100010006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B516F5864450FB6A3D65F07E /* Activities_181_270.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_181_270.swift; sourceTree = "<group>"; };
 		C3DA1835D8E760528D480F72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E87F56745B89716B5D5A7146 /* Activities_271_365.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities_271_365.swift; sourceTree = "<group>"; };
 		ECE2B9654967FB4A89CE129A /* BabyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyProfile.swift; sourceTree = "<group>"; };
-		AA1234560002000100010002 /* FavoriteActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteActivity.swift; sourceTree = "<group>"; };
-		AA1234560002000100010004 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleFoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LittleFoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34D4AF64998D32EC5761986 /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
 		FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BB0000000000000000000010 /* Frameworks */ = {
+		A32049DECE6AF57AA0E76AF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0D573AB2F5E1E22004FEC85 /* PhosphorSwift in Frameworks */,
+				932D085340B11EC532275C7F /* PhosphorSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +71,12 @@
 		015EF3D9DBAA0C66E461716A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AA1234560001000100010004 /* ActivityDetailView.swift */,
+				F34D4AF64998D32EC5761986 /* ActivityDetailView.swift */,
 				FF1EB9BF0997C3BD373EF3B8 /* DashboardView.swift */,
+				2E10D6BDA9DECC428C39CBFE /* FavoritesView.swift */,
 				6AF570BC884320C40BCE9165 /* OnboardingView.swift */,
-				AA1234560001000100010002 /* PastActivitiesView.swift */,
-				AA1234560001000100010006 /* SettingsView.swift */,
-				AA1234560002000100010004 /* FavoritesView.swift */,
+				83607181C5A82F0E89BB4F00 /* PastActivitiesView.swift */,
+				628C18B5C68CE21EC128016A /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -82,6 +84,7 @@
 		036D01169198F32F6060562C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3E7200C3D0DC42F226328EB7 /* NotificationDelegate.swift */,
 				1DAFA0F96C5A720A13D08ED6 /* NotificationManager.swift */,
 			);
 			path = Services;
@@ -91,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				ECE2B9654967FB4A89CE129A /* BabyProfile.swift */,
-				AA1234560002000100010002 /* FavoriteActivity.swift */,
+				84290E6E7989C5B8D1083C4D /* FavoriteActivity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,8 +152,8 @@
 			buildConfigurationList = 9969775861FD0311239A1C8E /* Build configuration list for PBXNativeTarget "LittleFoot" */;
 			buildPhases = (
 				F9A541F819BF55FE46CE1299 /* Sources */,
-				BB0000000000000000000010 /* Frameworks */,
 				986022E8B26B9425506792DF /* Resources */,
+				A32049DECE6AF57AA0E76AF4 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,7 +161,7 @@
 			);
 			name = LittleFoot;
 			packageProductDependencies = (
-				BB0000000000000000000002 /* PhosphorSwift */,
+				60F15D3B4576F0ECA68B0AF7 /* PhosphorSwift */,
 			);
 			productName = LittleFoot;
 			productReference = F2E8C4563DF1BF547CFB9A55 /* LittleFoot.app */;
@@ -172,6 +175,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 7EC9BE9C71274B27C817B694 /* Build configuration list for PBXProject "LittleFoot" */;
 			developmentRegion = en;
@@ -183,7 +188,7 @@
 			mainGroup = 94E9207F826D79D5633E359A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				BB0000000000000000000001 /* XCRemoteSwiftPackageReference "swift" */,
+				F5E679AE1CD686AB0983F7B5 /* XCRemoteSwiftPackageReference "swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C3CA9FD4DB243072B4D272C2 /* Products */;
@@ -218,18 +223,19 @@
 				A6C2C5C8376139FD7D660291 /* Activities_181_270.swift in Sources */,
 				9148A7429C10E170B8D0B476 /* Activities_271_365.swift in Sources */,
 				781A8185C26409D685048D86 /* Activity.swift in Sources */,
+				9CD4585D3E37C216901EC4AD /* ActivityDetailView.swift in Sources */,
 				FE32DD899C04EE27BD0BB49A /* BabyProfile.swift in Sources */,
 				CF6C67E1889356CBA13E2CA9 /* ContentView.swift in Sources */,
 				ED8BE8B52FE989E7D226D871 /* DashboardView.swift in Sources */,
+				8E47A5CA449E147D96BBC12F /* FavoriteActivity.swift in Sources */,
+				74DA2031F403FBE44F2C77EB /* FavoritesView.swift in Sources */,
 				57CF0B609F26F08302D72B56 /* LittleFootApp.swift in Sources */,
+				787A5765D8FA477B24E66611 /* NotificationDelegate.swift in Sources */,
 				DA80F3FC26623C1296C31A3D /* NotificationManager.swift in Sources */,
 				85C5A0B29257A35A501D5E22 /* OnboardingView.swift in Sources */,
+				32C52715192825080E7D0DED /* PastActivitiesView.swift in Sources */,
+				86B814EDDACAF7DD3614C53D /* SettingsView.swift in Sources */,
 				F76DD9B4973CFF825058693A /* Theme.swift in Sources */,
-				AA1234560001000100010001 /* PastActivitiesView.swift in Sources */,
-				AA1234560001000100010003 /* ActivityDetailView.swift in Sources */,
-				AA1234560001000100010005 /* SettingsView.swift in Sources */,
-				AA1234560002000100010001 /* FavoriteActivity.swift in Sources */,
-				AA1234560002000100010003 /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,22 +246,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6545L82DZR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Little Foot";
-				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Little Foot sends a daily reminder with your baby's activity for the day.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.littlefoot.babyapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefoot.app;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,22 +390,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6545L82DZR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Little Foot";
-				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Little Foot sends a daily reminder with your baby's activity for the day.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.littlefoot.babyapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlefoot.app;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,7 +431,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BB0000000000000000000001 /* XCRemoteSwiftPackageReference "swift" */ = {
+		F5E679AE1CD686AB0983F7B5 /* XCRemoteSwiftPackageReference "swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/phosphor-icons/swift";
 			requirement = {
@@ -444,9 +442,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BB0000000000000000000002 /* PhosphorSwift */ = {
+		60F15D3B4576F0ECA68B0AF7 /* PhosphorSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BB0000000000000000000001 /* XCRemoteSwiftPackageReference "swift" */;
+			package = F5E679AE1CD686AB0983F7B5 /* XCRemoteSwiftPackageReference "swift" */;
 			productName = PhosphorSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

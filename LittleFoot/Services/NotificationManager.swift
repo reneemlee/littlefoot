@@ -24,6 +24,7 @@ enum NotificationManager {
             content.subtitle = "\(babyName) — Day \(dayOfLife)"
             content.body = "\(activity.name): \(activity.description)"
             content.sound = .default
+            content.userInfo = ["dayOfLife": dayOfLife]
 
             var triggerDate = Calendar.current.dateComponents([.year, .month, .day], from: futureDate)
             triggerDate.hour = 8

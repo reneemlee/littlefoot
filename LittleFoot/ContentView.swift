@@ -6,7 +6,9 @@ struct ContentView: View {
     @Query private var profiles: [BabyProfile]
     @Environment(\.modelContext) private var modelContext
 
+    @Environment(NotificationDelegate.self) private var notificationDelegate
     @State private var selectedTab = 0
+    @State private var navigationPath = NavigationPath()
 
     private let communityURL = URL(string: "https://www.facebook.com/groups/1282544283776390")!
 
@@ -16,15 +18,26 @@ struct ContentView: View {
                 Group {
                     switch selectedTab {
                     case 0:
-                        NavigationStack {
+                        NavigationStack(path: $navigationPath) {
                             DashboardView(profile: profile)
+                                .navigationDestination(for: Int.self) { day in
+                                    ActivityDetailView(
+                                        activity: Activities.forDay(day),
+                                        date: Calendar.current.date(
+                                            byAdding: .day,
+                                            value: day - 1,
+                                            to: profile.birthday
+                                        ) ?? Date(),
+                                        dayOfLife: day
+                                    )
+                                }
                         }
                     case 1:
                         NavigationStack {
                             FavoritesView(profile: profile)
                         }
                     default:
-                        NavigationStack {
+                        NavigationStack(path: $navigationPath) {
                             DashboardView(profile: profile)
                         }
                     }
@@ -64,6 +77,13 @@ struct ContentView: View {
                         babyName: profile.name,
                         birthday: profile.birthday
                     )
+                }
+                .onChange(of: notificationDelegate.pendingDayOfLife, initial: true) { _, day in
+                    guard let day else { return }
+                    selectedTab = 0
+                    navigationPath.removeLast(navigationPath.count)
+                    navigationPath.append(day)
+                    notificationDelegate.pendingDayOfLife = nil
                 }
             } else {
                 OnboardingView()

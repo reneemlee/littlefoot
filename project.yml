@@ -9,12 +9,18 @@ settings:
   SWIFT_VERSION: "5.9"
   MARKETING_VERSION: "1.0.0"
   CURRENT_PROJECT_VERSION: "1"
+packages:
+  PhosphorSwift:
+    url: https://github.com/phosphor-icons/swift
+    majorVersion: 2.0.0
 targets:
   LittleFoot:
     type: application
     platform: iOS
     sources:
       - LittleFoot
+    dependencies:
+      - package: PhosphorSwift
     settings:
       INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
       INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true

@@ -17,7 +17,7 @@ cd /Users/reneelee/littlefoot && xcodegen generate
 
 2. Build for iOS Simulator:
 ```bash
-cd /Users/reneelee/littlefoot && xcodebuild -scheme LittleFoot -destination 'platform=iOS Simulator,name=iPhone 16' build 2>&1 | tail -20
+cd /Users/reneelee/littlefoot && xcodebuild -scheme LittleFoot -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' build 2>&1 | tail -20
 ```
 
 3. If the build fails, read the error output and fix the issues. Common problems:
