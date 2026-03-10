@@ -27,7 +27,7 @@ targets:
       INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
       INFOPLIST_KEY_UILaunchScreen_Generation: true
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
-      PRODUCT_BUNDLE_IDENTIFIER: com.littlefoot.app
+      PRODUCT_BUNDLE_IDENTIFIER: com.littlefoot.babyapp
       GENERATE_INFOPLIST_FILE: true
       INFOPLIST_KEY_CFBundleDisplayName: "Little Foot"
   LittleFootTests:
